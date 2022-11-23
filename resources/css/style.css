@@ -1,0 +1,50 @@
+.container{
+    margin: 10px;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.action
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.car-component{
+    background-color: pink;
+    margin: 5px;
+    width: 25%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.car{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px black dotted;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.close{
+    background-color: red;
+    text-align: center;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
