@@ -3,7 +3,7 @@ import '../../css/style.css'
 
 export default function Counter ()
 {
-    let [value = 0, setValue] = useState();
+    let [value, setValue] = useState(0);
     const handleAction = (e)=>
     {
         const action = e.target.id;
