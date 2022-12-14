@@ -39,8 +39,39 @@ Route::get('/counter', function(){
     return Inertia::render('Counter');
 });
 
-Route::get('/cars', function(){
-    return Inertia::render('Cars/Car');
+Route::get('/cars',[App\Http\Controllers\CarController::class, 'index'])->name('cars.index');
+
+Route::get('/cars-create', function(){
+    return Inertia::render('Cars/CreateCar');
+})->name('cars.create');
+
+Route::delete('cars/{id}', [App\Http\Controllers\CarController::class, 'delete'])->name('cars.delete');
+Route::post('/create',[App\Http\Controllers\CarController::class,'store']);
+
+Route::get('/destructuring',fn()=> Inertia::render('Destruct/Index'));
+
+
+Route::get('context', function()
+{
+    return Inertia::render('Context/Index');
 });
+
+Route::get('/lifecycle', function(){
+    return Inertia::render('Lifecycle/Index');
+});
+
+Route::get('todos', function(){
+  return Inertia::render('Todo/Index');
+});
+
+Route::get('hooks', function () {
+    return Inertia::render('Hooks/UseEffect');
+});
+
+route::get('dbz', function () {
+    return Inertia::render('Dbz/Index');
+});
+
+Route::get('mother',[App\Http\Controllers\MotherController::class, 'index'])->name('mother');
 
 require __DIR__.'/auth.php';

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        const array = ['userOne','userTwo','userFree','userFour'];
+        array.push('userFive');
+        const [,...rest] = array;
+        const objectList = [
+        {
+            id:1,
+            name:'userOne'
+        },
+        {
+            id:2,
+            name:'userTwo'
+        },
+        {
+            id:3,
+            name:'userFree'
+        },
+        {
+            id:1,
+            name:'userOne'
+        },
+        {
+            id:3,
+            name:'userThree'
+        },
+        ]
+
+        //const duplicateValue = (listOfObject)=>
+        //{
+        //    const duplicate = [];
+        //    listOfObject.map((object,index)=>
+        //    {
+        //        for (let i = index + 1; i < objectList.length; i++)
+        //        {
+        //            object.id === listOfObject[i].id && duplicate.push(object);
+        //        }
+        //    });
+        //    return duplicate;
+        //}
+        //const duplicateObject =  duplicateValue(objectList);
+        
+        const [objectOne,objectTwo,...restObject] = objectList;
+        const {id:userId, name} = objectOne;
+        console.log(userId);
+    </script>
+</body>
+</html>

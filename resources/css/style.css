@@ -48,3 +48,42 @@
     cursor: pointer;
     font-weight: bold;
 }
+.button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    width: 130px;
+    border-radius: 5px;
+    text-align: center;
+}
+label
+{
+    width: 100px;
+    display:inline-block;
+}
+.form-group{
+    margin: 5px;
+}
+.errors{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 100px;
+}
+.react-hover
+{
+    color: cadetblue;
+    text-transform: lowercase;
+}
+.group-btn{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.createYear{
+    width: 65%;
+    color: brown;
+}
